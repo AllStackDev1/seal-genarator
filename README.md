@@ -5,9 +5,11 @@
 
 
 ```js
+import { useRef } from 'react'
 import SealGen from './App.js'
 
 const CreateSeal = () => {
+  const sealRef = useRef(null)
     return (
         <>
             <SealGen ref={sealRef} />
