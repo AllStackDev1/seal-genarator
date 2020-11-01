@@ -25,7 +25,7 @@ const App = forwardRef((props, ref) => {
       })
     }
     return () => (mounted = false)
-  }, [companyName, companyRegNumber, color, fontFamily])
+  })
 
   useImperativeHandle(ref, () => ({
     setCompanyName(val) {
@@ -42,6 +42,11 @@ const App = forwardRef((props, ref) => {
     }
   }))
 
+  const getSize = (val = 300, diff = 0) => {
+    const size = val - diff
+    return { width: `${size}px`, height: `${size}px` }
+  }
+
   return (
     <div
       className='content'
@@ -50,16 +55,35 @@ const App = forwardRef((props, ref) => {
         color: props.color || color
       }}
     >
-      <div id='outer-circle1' style={{ borderColor: props.color || color }}>
-        <div id='inner-circle1' style={{ borderColor: props.color || color }}>
+      <div
+        id='outer-circle1'
+        style={{
+          height: props.size || 300,
+          width: props.size || 300,
+          borderColor: props.color || color
+        }}
+      >
+        <div
+          id='inner-circle1'
+          style={{ borderColor: props.color || color, ...getSize(props.size, 10) }}
+        >
           <span className='inside-content-text-1'>
             {props.companyName || companyName}
           </span>
-          <div id='outer-circle2' style={{ borderColor: props.color || color }}>
-            <div id='inner-circle2' style={{ borderColor: props.color || color }}>
+          <div
+            id='outer-circle2'
+            style={{ borderColor: props.color || color, ...getSize(props.size, 100) }}
+          >
+            <div
+              id='inner-circle2'
+              style={{ borderColor: props.color || color, ...getSize(props.size, 110) }}
+            >
               <div
                 id='inside-content2'
-                style={{ fontFamily: props.innerText?.fontFamily || 'cursive' }}
+                style={Object.assign(
+                  { fontFamily: 'cursive' },
+                  { ...props.innerTextStyle }
+                )}
               >
                 <span id='the'>The</span>
                 <span id='common'>Common</span>

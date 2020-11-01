@@ -9,8 +9,6 @@
 #outer-circle1 {
   border-radius: 50%;
   border: 1px solid;
-  height:300px;
-  width:300px;
 }
 
 #inner-circle1 {
@@ -21,8 +19,6 @@
   align-items: center;
   border: 1px solid;
   border-radius: 50%;
-  height: 290px;
-  width: 290px;
   margin: 4px;
 }
 
@@ -41,16 +37,12 @@
 #outer-circle2 {
   border-radius: 50%;
   border: 1px solid;
-  height:200px;
-  width:200px;
 }
 
 #inner-circle2 {
   position: relative;
   border: 1px solid;
   border-radius: 50%;
-  height: 190px;
-  width: 190px;
   margin: 4px;
   display: flex;
   justify-content: center;

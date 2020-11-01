@@ -2,17 +2,19 @@ import { useRef } from 'react'
 import SealGen from './App.js'
 
 const CreateSeal = () => {
-  const sealRef = useRef()
+  const sealRef = useRef(null)
 
   return (
     <>
       <div style={{ display: 'flex' }}>
         <SealGen ref={sealRef} />
         <SealGen
-          companyName='Unknowned'
+          companyName='Unknown'
           companyRegNumber='49039230495'
           color='green'
           fontFamily='cursive'
+          innerTextStyle={{ fontSize: '12px' }}
+          size={250}
         />
       </div>
 
