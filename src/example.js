@@ -9,7 +9,7 @@ const CreateSeal = () => {
       <div style={{ display: 'flex' }}>
         <SealGen ref={sealRef} />
         <SealGen
-          companyName='Unknown'
+          companyName='xyz imports'
           companyRegNumber='49039230495'
           color='green'
           fontFamily='cursive'
