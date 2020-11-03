@@ -1,6 +1,6 @@
 {
   "name": "seal-genarator",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "main": "build/index.js",
   "scripts": {
     "start": "node scripts/start.js",
@@ -10,7 +10,9 @@
     "test": "node scripts/test.js"
   },
   "license": "MIT",
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "7.6.0",
