@@ -5,6 +5,7 @@
 ```js
 import React from 'react'
 import SealGenarator from 'seal-genarator'
+import 'seal-genarator/build/index.css'
 
 const CreateSeal = () => {
   return (
@@ -23,7 +24,6 @@ export default CreateSeal
 ```
 
 ![Alt text](https://github.com/AllStackDev1/seal-genarator/blob/master/public/sample.png?raw=true "Sample")
-
 
 ## Props
 
