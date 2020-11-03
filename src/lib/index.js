@@ -1,8 +1,3 @@
-import Example from './components/Example';
-import SecondExample from './components/SecondExample';
+import SealGenegrator from './components/SealGenegrator'
 
-export default Example;
-
-export {
-  SecondExample,
-};
+export default SealGenegrator
