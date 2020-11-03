@@ -1,6 +1,6 @@
 {
   "name": "@allstackdev1/seal-genarator",
-  "version": "0.1.15",
+  "version": "0.1.16",
   "main": "build/index.js",
   "scripts": {
     "start": "node scripts/start.js",
@@ -11,11 +11,11 @@
   },
   "license": "MIT",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/allstackdev1"
+    "registry": "https://npm.pkg.github.com/allstackdev"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/allstackdev1/seal-genarator"
+    "url": "https://github.com/allstackdev1/seal-genarator.git"
   },
   "dependencies": {},
   "devDependencies": {
