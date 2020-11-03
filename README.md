@@ -54,4 +54,5 @@ export default CreateSeal
 | ------------- | ------------- |
 | npm run start  | Start dev server  |
 | npm run build  | Build for release  |
+| npm run demo  | Build for deploy  |
 | npm test | Run unit and screenshot tests |
