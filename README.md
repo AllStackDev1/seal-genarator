@@ -1,38 +1,57 @@
-This project was bootstrapped with [Create React Library](https://github.com/dimimikadze/create-react-library).
+# SEAL GENERATOR
 
-All library files are located inside **src/lib** folder.
+## Example
 
-Inside **src/demo** folder, you can test your library while developing.
+- detail example in src/example.js
 
-## Available Scripts
+```js
+import { useRef } from 'react'
+import SealGen from './App.js'
 
-In the project directory, you can run:
+const CreateSeal = () => {
+  const sealRef = useRef(null)
+    return (
+        <>
+            <SealGen ref={sealRef} />
+            <SealGen
+              companyName='xyz imports'
+              companyRegNumber='49039230495'
+              color='red'
+              fontFamily='cursive'
+              innerTextStyle={{ fontSize: '12px' }}
+              size={250}
+            />
+        </>
+    )
+}
 
-### `npm start` or `yarn start`
+export default CreateSeal
+```
 
-Runs the library in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Props
 
-### `npm run test` or `yarn run test`
+| Name  | Type |
+| ------------- | ------------- |
+| companyName  | `string`  |
+| companyRegNumber  | `string`  |
+| color  | `string`  |
+| fontFamily  | `string`  |
+| innerTextStyle  | `styles object`  |
+| size  | `number`  |
 
-Runs the test watcher in an interactive mode.
+## Ref
 
-### `npm run build` or `yarn build`
+| Function  | Description |
+| ------------- | ------------- |
+| setCompanyName  | To set the company name  |
+| setCompanyRegNumber  | To set the company registration number  |
+| setColor  | To set the seal color  |
+| setFontFamily  | To set the seal font family  |
 
-Builds the library for production to the `build` folder.
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Development Commands
 
-### `npm publish`
-
-Publishes the library to NPM.
-
-## Typescript
-
-[Adding Typescript support](https://gist.github.com/DimiMikadze/f25e1c5c70fa003953afd40fa9042517)
-
-## Troubleshooting
-
-### Usage of other libraries within your library
-
-- Add the library as a peer dependency in package.json (effectively requiring the calling project to provide this dependency)
-- Add the library as a dev dependency in package.json (effectively allowing this library to successfully build without complaining about not having this dependency)
-- Add the library to the externals config in your webpack.config file(s). By default, only react and react-dom are there, meaning that those are the only two libraries that you can use within your new shared library.
+| Command  | Description |
+| ------------- | ------------- |
+| npm run start  | Start dev server  |
+| npm run build  | Build for release  |
+| npm test | Run unit and screenshot tests |
