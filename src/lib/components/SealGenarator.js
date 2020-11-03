@@ -1,9 +1,9 @@
 /* eslint-disable space-before-function-paren */
 import React, { useState, useEffect, forwardRef, useImperativeHandle } from 'react'
 import CircleType from 'circletype'
-import './SealGenegrator.css'
+import './SealGenarator.css'
 
-const SealGenegrator = forwardRef((props, ref) => {
+const SealGenarator = forwardRef((props, ref) => {
   const [companyName, setCompanyName] = useState('')
   const [companyRegNumber, setCompanyRegNumber] = useState('')
   const [color, setColor] = useState('#dc143c')
@@ -101,6 +101,6 @@ const SealGenegrator = forwardRef((props, ref) => {
   )
 })
 
-SealGenegrator.displayName = 'SealGenegrator'
+SealGenarator.displayName = 'SealGenarator'
 
-export default SealGenegrator
+export default SealGenarator

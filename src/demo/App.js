@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import SealGenegrator from '../lib';
+import SealGenarator from '../lib';
 
 const App = () => {
   const sealRef = useRef(null)
@@ -7,8 +7,8 @@ const App = () => {
   return (
     <>
       <div style={{ display: 'flex' }}>
-        <SealGenegrator ref={sealRef} />
-        <SealGenegrator
+        <SealGenarator ref={sealRef} />
+        <SealGenarator
           companyName='xyz imports'
           companyRegNumber='49039230495'
           color='green'

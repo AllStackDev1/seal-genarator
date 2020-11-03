@@ -1,3 +1,3 @@
-import SealGenegrator from './components/SealGenegrator'
+import SealGenarator from './components/SealGenarator'
 
-export default SealGenegrator
+export default SealGenarator

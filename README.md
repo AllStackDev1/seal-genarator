@@ -2,15 +2,13 @@
 
 ## Example
 
-- detail example in src/example.js
-
 ```js
 import React from 'react'
-import SealGenegrator from 'seal-genegrator'
+import SealGenarator from 'seal-genarator'
 
 const CreateSeal = () => {
   return (
-    <SealGenegrator
+    <SealGenarator
       companyName='xyz imports'
       companyRegNumber='49039230495'
       color='green'
@@ -24,7 +22,8 @@ const CreateSeal = () => {
 export default CreateSeal
 ```
 
-![Alt text](public/sample.png?raw=true "Sample")
+![Alt text](https://github.com/AllStackDev1/seal-genarator/blob/master/public/sample.png?raw=true "Sample")
+
 
 ## Props
 
