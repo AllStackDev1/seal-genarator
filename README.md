@@ -5,28 +5,26 @@
 - detail example in src/example.js
 
 ```js
-import { useRef } from 'react'
-import SealGen from './App.js'
+import React from 'react'
+import SealGenegrator from 'seal-genegrator'
 
 const CreateSeal = () => {
-  const sealRef = useRef(null)
-    return (
-        <>
-            <SealGen ref={sealRef} />
-            <SealGen
-              companyName='xyz imports'
-              companyRegNumber='49039230495'
-              color='red'
-              fontFamily='cursive'
-              innerTextStyle={{ fontSize: '12px' }}
-              size={250}
-            />
-        </>
-    )
+  return (
+    <SealGenegrator
+      companyName='xyz imports'
+      companyRegNumber='49039230495'
+      color='green'
+      fontFamily='cursive'
+      innerTextStyle={{ fontSize: '12px' }}
+      size={250}
+    />
+  )
 }
 
 export default CreateSeal
 ```
+
+![Alt text](public/sample.png?raw=true "Sample")
 
 ## Props
 
