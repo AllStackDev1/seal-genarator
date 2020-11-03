@@ -10,6 +10,7 @@
     "test": "node scripts/test.js"
   },
   "license": "MIT",
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "7.6.0",
