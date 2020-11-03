@@ -5,6 +5,7 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
+    "pub": "npm version patch --force && npm publish",
     "demo": "node scripts/demo.js",
     "test": "node scripts/test.js"
   },
