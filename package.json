@@ -11,7 +11,7 @@
   },
   "license": "MIT",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/allstackdev"
+    "registry": "https://npm.pkg.github.com"
   },
   "repository": {
     "type": "git",
