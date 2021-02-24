@@ -1,5 +1,5 @@
 {
-  "name": "@allstackdev1/seal-generator",
+  "name": "@allstackdev1/seal-genarator",
   "version": "0.1.17",
   "main": "build/index.js",
   "scripts": {
